@@ -5,8 +5,8 @@
 - MongoDB
 
 ## 1. Modifying Documentation: Update Readme
-- [ ] Check all the TODO Tasks
-- [ ] Delete `TODO` mark when done modifying
+- [x] Check all the TODO Tasks
+- [x] Delete `TODO` mark when done modifying
 
 ## 2. Modifying Composer: Update `composer.json`
 Change the following:
@@ -123,8 +123,8 @@ Task: Users can be divided into group, they can login, basic information and rol
 
 Task:
 Create more tables for the following
-- [ ] Projects
-- [ ] Project ↔ User assignments (project_user)
+- [ ] Meetings
+- [ ] Meeting ↔ User assignments (project_user)
 - [ ] Tasks
 
 Just Copy the following for the `project_users.model.sql`
