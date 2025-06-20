@@ -10,9 +10,9 @@
 
 ## 2. Modifying Composer: Update `composer.json`
 Change the following:
-- [ ] your-username-here
-- [ ] project-name-here
-- [ ] add author/s
+- [x] your-username-here
+- [x] project-name-here
+- [x] add author/s
 ```json
 "authors": [
     {
