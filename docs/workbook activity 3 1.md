@@ -28,9 +28,9 @@ Change the following:
 
 ## 3. Modifying Docker: Update `compose.yml`
 Change the following:
-- [ ] Change all `web-app-php`.
+- [x] Change all `web-app-php`.
 > Using `ctrl` + `shift` + `D`, each press in `D` will select another similar text and its not case sensetive.
-- [ ] Update Database names: `MONGO_INITDB_DATABASE` & `POSTGRES_DB`
+- [x] Update Database names: `MONGO_INITDB_DATABASE` & `POSTGRES_DB`
 - [ ] (Optional) Can Change External ports <External Port>:<Internal Port> ex.: "27017:27017" -> "23567:27017"
 
 ## 4. Update the Checker
