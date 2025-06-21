@@ -68,10 +68,10 @@ composer require vlucas/phpdotenv
 ## 6. Modifying `.env`: Update `.env`
 Make sure important informations are hidden and tucked . as in testing of for the checker they should be changed from hard codded to env based
 
-- [ ] Fill all the following data
+- [x] Fill all the following data
 > Restart the docker after this. both `docker compose watch` and `docker compose up`
-- [ ] Change the hard coded of checkers to env based
-- [ ] Create a `envSetter.util.php` code distributing all the env
+- [x] Change the hard coded of checkers to env based
+- [x] Create a `envSetter.util.php` code distributing all the env
 > add the following code before distributing it to a variable
 ```php
 <?php
@@ -84,7 +84,7 @@ $typeConfig = [
     'key' => $_ENV['ENV_NAME'],
 ];
 ```
-- [ ] Update `mongodbChecker.handler.php` and `postgreChecker.handler.php`
+- [x] Update `mongodbChecker.handler.php` and `postgreChecker.handler.php`
     All working:
     ```html
     ✅ Connected to MongoDB successfully.

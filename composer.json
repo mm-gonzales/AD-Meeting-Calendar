@@ -1,15 +1,16 @@
 {
-    "name": "mm-gonzales/ad-meeting-calendar",
-    "type": "project",
+    "name": "michaelagonzales/ad-meeting-calendar",
+    "autoload": {
+        "psr-4": {
+            "Michaelagonzales\\AdMeetingCalendar\\": "src/"
+        }
+    },
     "authors": [
         {
             "name": "mm-gonzales",
             "email": "michaela.v.gonzales@gmail.com"
         }
     ],
-    "scripts": {
-        "start": "php -S localhost:8000 router.php"
-    },
     "require": {
         "vlucas/phpdotenv": "^5.6"
     }
