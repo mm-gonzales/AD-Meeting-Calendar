@@ -3,6 +3,8 @@
 // require_once __DIR__ . '/bootstrap.php';
 require_once __DIR__ . '/utils/envSetter.util.php';
 
+<!-- TODO: Debug Error -->
+
 try {
     // Use Mongo URI and DB name from the env
     $mongo = new MongoDB\Driver\Manager($typeConfig['mongoUri']);

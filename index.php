@@ -3,6 +3,7 @@ require_once  __DIR__ . '/bootstrap.php';
 
 require_once __DIR__ . '/utils/envSetter.util.php';
 
+<!-- TODO: Fix the error on calling handlers -->
 require_once __DIR__ . '/handlers/mongodbChecker.handler.php';
 
 // require_once __DIR__ . '/handlers/postgreChecker.handler.php';
