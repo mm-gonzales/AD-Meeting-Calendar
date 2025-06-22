@@ -3,7 +3,6 @@
 require_once __DIR__ . '/bootstrap.php';
 require_once __DIR__ . '/utils/envSetter.util.php';
 
-<!-- TODO: Debug Error -->
 
 $host = $typeConfig['pgHost'];
 $port = $typeConfig['pgPort'];
