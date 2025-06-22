@@ -99,12 +99,12 @@ $typeConfig = [
 
 ## 7. Using Tools: Connecting Database to UI Database Manager
 Using `Database` a tool at the tool tab manage and view your database
-- [ ] Make Sure the Database is working. Go to Docker Desktop and make sure the `image` of `postgre` is green.
-- [ ] In `Database` click `Create Connection`
-- [ ] Select `PostgreSQL`
-- [ ] Setup connection: Port, Username, Password and Database
+- [x] Make Sure the Database is working. Go to Docker Desktop and make sure the `image` of `postgre` is green.
+- [x] In `Database` click `Create Connection`
+- [x] Select `PostgreSQL`
+- [x] Setup connection: Port, Username, Password and Database
 > can be view the data in `compose.yaml`
-- [ ] Click Connect and should show: `Connection Success!` then `Save`
+- [x] Click Connect and should show: `Connection Success!` then `Save`
 
 ## 8. Design Database: Creating Database formula preparation for automation
 Using the GUI of database you need to formulate your data structure on how you will handle datas of your system.
