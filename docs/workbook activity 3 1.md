@@ -149,9 +149,9 @@ In this step we will design an automation that resets the database when needed a
 - Process: Automatically Create
 - Output: Create the Tables Ready for Use
 
-- [ ] Creating a new util code `dbResetPostgresql.util.php`
+- [x] Creating a new util code `dbResetPostgresql.util.php`
 
-- [ ] Setting up requirements
+- [x] Setting up requirements
 > Just copy this
 ```php
 declare(strict_types=1);
@@ -166,7 +166,7 @@ require 'bootstrap.php';
 require_once UTILS_PATH . '/envSetter.util.php';
 ```
 
-- [ ] Adding the database host and connecting
+- [x] Adding the database host and connecting
 ```php
 // ——— Connect to PostgreSQL ———
 $dsn = "pgsql:host={$pgConfig['host']};port={$pgConfig['port']};dbname={$pgConfig['db']}";
@@ -175,7 +175,7 @@ $pdo = new PDO($dsn, $pgConfig['user'], $pgConfig['pass'], [
 ]);
 ```
 
-- [ ] Using specific commands to use to automatically generate the database tables
+- [x] Using specific commands to use to automatically generate the database tables
 ```php
 // Just indicator it was working
 echo "Applying schema from database/user.model.sql…\n";
@@ -193,7 +193,7 @@ if ($sql === false) {
 $pdo->exec($sql);
 ```
 
-- [ ] Make sure it clean the tables
+- [x] Make sure it clean the tables
 ```php
 echo "Truncating tables…\n";
 foreach (['users'] as $table) {
@@ -201,7 +201,7 @@ foreach (['users'] as $table) {
 }
 ```
 
-- [ ] Add the command in the composer.json
+- [x] Add the command in the composer.json
     - below `scripts` add a new library key set
     - `"postgresql:reset": "php utils/dbResetPostgresql.util.php`
 
