@@ -14,8 +14,12 @@ services:
           action: rebuild
         - path: ./composer.lock
           action: rebuild
+    volumes:
+      - .:/var/www/html
+      - ./.env:/var/www/html/.env
     depends_on:
       - mongodb
+      - postgresql
 
   mongodb:
     image: mongo:latest

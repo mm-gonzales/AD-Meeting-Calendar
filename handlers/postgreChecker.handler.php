@@ -1,7 +1,6 @@
 <?php
 
-require_once __DIR__ . '/bootstrap.php';
-require_once __DIR__ . '/utils/envSetter.util.php';
+require_once __DIR__ . '/../utils/envSetter.util.php';
 
 $host = $typeConfig['pgHost'];
 $port = $typeConfig['pgPort'];
