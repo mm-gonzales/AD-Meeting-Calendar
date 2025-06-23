@@ -11,7 +11,7 @@ require 'vendor/autoload.php';
 require 'bootstrap.php';
 
 // 3) Load environment
-require_once __DIR__ . '/envSetter.util.php';
+require_once UTILS_PATH . 'envSetter.util.php';
 
 // Extract config
 $pgConfig = [
