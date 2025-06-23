@@ -1,10 +1,14 @@
 <?php
 
-require_once __DIR__ . '/../vendor/autoload.php';
-// require_once __DIR__ . '/bootstrap.php';
+require_once VENDOR_PATH . 'autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv = Dotenv\Dotenv::createImmutable(BASE_PATH);
 $dotenv->load();
+
+
+// Determine PostgreSQL host based on environment
+$pgHost = getenv('IS_DOCKER') === 'true' ? 'host.docker.internal' : 'localhost';
+
 
 $typeConfig = [
     // MongoDB configuration
