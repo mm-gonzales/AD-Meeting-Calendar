@@ -1,7 +1,5 @@
 <?php
 
-//TODO: finalize .env values and validate postgre connection
-
 declare(strict_types=1);
 
 // 1) Autoload
@@ -15,11 +13,11 @@ require_once UTILS_PATH . 'envSetter.util.php';
 
 // Extract config
 $pgConfig = [
-    'host' => $_ENV['PG_HOST'],
-    'port' => $_ENV['PG_PORT'],
-    'db'   => $_ENV['PG_DB'],
-    'user' => $_ENV['PG_USER'],
-    'pass' => $_ENV['PG_PASS'],
+    'host' => $typeConfig['pgHost'],
+    'port' => $typeConfig['pgPort'],
+    'db'   => $typeConfig['pgDb'],
+    'user' => $typeConfig['pgUser'],
+    'pass' => $typeConfig['pgPass'],
 ];
 
 try {
