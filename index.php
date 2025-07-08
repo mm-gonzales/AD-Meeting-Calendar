@@ -15,10 +15,10 @@ renderMainLayout(
         <!-- Hero Section -->
         <section class="container py-5 text-center">
             <h2 class="display-4 fw-bold">
-                Organize. Collaborate. Achieve More Together.
+                Schedule. Connect. Make Every Meeting Count.
             </h2>
             <p class="lead text-secondary mt-3">
-                With TaskManager, unite your team—designers, testers, developers, and project leads—in one powerful platform. Transform ideas into results with clear communication, shared goals, and total project visibility.
+                With AD-Meeting Calendar, bring your team together—plan, organize, and track meetings in one seamless platform. Ensure everyone is on the same page with shared schedules, reminders, and real-time updates.
             </p>
         </section>
 
@@ -30,8 +30,8 @@ renderMainLayout(
             <div class="col">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
-                <h5 class="card-title fw-bold">Task Management</h5>
-                <p class="card-text text-secondary">Easily assign and track progress across your team.</p>
+                <h5 class="card-title fw-bold">Meeting Scheduling</h5>
+                <p class="card-text text-secondary">Easily create, schedule, and manage meetings for your entire team with reminders and calendar integration.</p>
                 </div>
             </div>
             </div>
