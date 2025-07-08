@@ -20,15 +20,32 @@ $user = Auth::user();
  * @param string   $title         Page title (for navbar use only)
  * @return void
  */
-function renderMainLayout(callable $content, string $title): void
+function renderMainLayout(callable $content, string $title, array $customJsCss = []): void
 {
-    global $user;
+    global $headNavList, $user;
 
-    // Render navbar (pass empty array if no dynamic nav items)
-    navHeader([], $user);
+    echo <<<HTML
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{$title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+    HTML;
 
-    // Render main content inside Bootstrap container
-    echo '<main class="container py-4">';
+    // Your custom navHeader renderer
+    navHeader($headNavList ?? [], $user);
+
+    echo '<main class="container py-5">';
     $content();
     echo '</main>';
+
+    echo <<<HTML
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    HTML;
 }
